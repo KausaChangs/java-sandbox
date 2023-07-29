@@ -16,15 +16,10 @@ public class Prices {
 		if(hammerPrice != null){
 			
 			System.out.println("A hammer costs " + hammerPrice);
-
 		} 
            else{
 			System.out.println("We don't sell hammers.");
 		
 		}
-
-	
     }
-
-
-	}
+}
