@@ -22,5 +22,29 @@ public class CoordinatedCountdownApp{
         int getTime();
     }
 
-    
+    class CountDownClock extends Thread implements TimeMonitor{
+        private int t;
+
+        public CountDownClock(int start){
+            this.t = start;
+        }
+
+        public void run(){
+            for (; t >= 0; t--){
+                System.out.println("T minus "+ t);
+                try{
+                    Thread.sleep(1000);
+                }
+                catch(InterruptedExcepton e){
+                    
+                }
+            }
+        }
+
+        public int getTime(){
+            return t;
+        }
+    }
+
+
 }
