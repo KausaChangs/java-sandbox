@@ -17,4 +17,10 @@ public class CoordinatedCountdownApp{
         new Thread(e).start();
        }
     }
+
+    interface TimeMonitor{
+        int getTime();
+    }
+
+    
 }
